@@ -1,3 +1,7 @@
+// Only showing the functionalities to the user...
+// Only Base Class can only be an Abstract Class...
+// Abstract class can not creat an Object....
+// The Base class virtual method must be override in the derived class...
 #include <iostream>
 #include <conio.h>
 using namespace std;
@@ -7,7 +11,10 @@ class carDriver
 {
 public:
     virtual void information() = 0; // Pure virtual function for displaying information
-    virtual void get() = 0;         // Pure virtual function for getting input
+    virtual void get()
+    {
+        // Virtual function for getting input
+    }
 };
 
 // Derived class Siam implementing the carDriver interface
@@ -42,7 +49,8 @@ public:
     // Implementation of the get function for Talha
     void get()
     {
-        cout << endl << "Enter the ID and Home Address of Talha: ";
+        cout << endl
+             << "Enter the ID and Home Address of Talha: ";
         cin >> id;
         getline(cin, home_add);
     }
