@@ -28,5 +28,6 @@ int main()
     overloading myObj;
     cout << myObj.sum(5.5f, 6.6f) << endl;
     cout << myObj.sum(5, 6, 7) << endl;
+    cout<< myObj.sum(10, 12) << endl;
     return 0;
 }
