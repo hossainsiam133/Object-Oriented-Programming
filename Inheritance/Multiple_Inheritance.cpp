@@ -1,40 +1,48 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
+// Class A with a public member variable 'a' and two display functions
 class A
 {
-    public:
-    int a=10;
+public:
+    int a = 10;
     void display()
     {
-        cout<<a<<endl;
+        cout << "The Number: " << a << endl;
     }
     void display1()
     {
-        cout<<a<<endl;
+        cout << "The Addition of " << a << " and " << a << " is: " << a + a << endl;
     }
 };
+// Class B with a public member variable 'b' and two display functions
 class B
 {
-    public:
-    int b=20;
+public:
+    int b = 20;
     void display()
     {
-        cout<<b<<endl;
+        cout << "The Number: " << b << endl;
     }
     void display2()
     {
-        cout<<b<<endl;
+        cout << "The Addition of " << b << " and " << b << " is: " << b + b << endl;
     }
 };
-class C: public A, public B
+// Class C inherits publicly from both classes A and B
+class C : public A, public B
 {
-    
 };
-
 int main()
 {
+    A a1;
+    B b1;
     C obj1;
-    //obj1.display();//if two function or variables are same in the both base class then an error will be thrown.and those errors are known as ambiguous error.
+    a1.display();
     obj1.display1();
+
+    b1.display();
     obj1.display2();
+    // Uncommenting the following line will result in an error due to ambiguity
+    // obj1.display();
     return 0;
+}

@@ -1,3 +1,4 @@
+//Encapsulation
 #include<iostream>
 using namespace std;
 

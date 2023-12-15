@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-
-class Animal  // Base Class - 01
+// Base Class - 01
+class Animal  
 {
 public:
     void eat()
@@ -9,8 +9,8 @@ public:
         cout << "Animal is eating." << endl;
     }
 };
-
-class Mammal  // Base Class - 02
+// Base Class - 02
+class Mammal  
 {
 public:
     void giveBirth()
@@ -18,8 +18,8 @@ public:
         cout << "Mammal is giving birth." << endl;
     }
 };
-
-class Dog : public Animal  // Sub Class - 01
+// Sub Class - 01
+class Dog : public Animal  
 {
 public:
     void bark()
@@ -27,8 +27,8 @@ public:
         cout << "Dog is barking." << endl;
     }
 };
-
-class Bat : public Mammal, public Dog  // Sub Class - 02
+// Sub Class - 02
+class Bat : public Mammal, public Dog  
 {
 public:
     void fly()
@@ -36,15 +36,15 @@ public:
         cout << "Bat is flying." << endl;
     }
 };
-
 int main()
 {
+    // Create object of the classes
     Dog myDog;
     Bat myBat;
-
+    // Access methods from the Dog class
     myDog.eat();
     myDog.bark();
-
+    // Access methods from both Animal and Mammal classes through the Bat class
     myBat.eat();  
     myBat.giveBirth();
     myBat.fly();

@@ -37,7 +37,6 @@ int main()
     c1.b = 20;
     c1.c = 30;
     c1.d = 40;
-
     c1.display2();
     return 0;
 }
