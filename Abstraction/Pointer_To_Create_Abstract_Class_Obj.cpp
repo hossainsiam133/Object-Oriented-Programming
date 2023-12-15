@@ -1,4 +1,3 @@
-// Pointers to Creating the Base Class Object...
 #include <iostream>
 using namespace std;
 class Base
