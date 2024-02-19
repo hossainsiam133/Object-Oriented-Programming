@@ -2,7 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class person
+class person // Base class
 {
 public:
 	string name;
